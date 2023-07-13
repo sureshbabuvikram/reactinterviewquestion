@@ -7,7 +7,7 @@ function Hooks(){
     const [users, setUsers] = useState([])
 
     //useContext
-    const [value1,setValue]=useContext(textContextValue)
+    const [value1]=useContext(textContextValue)
 
     //useContext updatevalue
     const[context,setContext]=useContext(textContextValue)

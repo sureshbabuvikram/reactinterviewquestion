@@ -6,7 +6,7 @@ function Apiexample() {
     const URL="https://jsonplaceholder.typicode.com/users";
     useEffect(()=>{
         axios.get(URL).then(res=>setvalue(res.data)).then(console.log(value)).catch(err=>console.log(err))
-    },[])
+    },[value])
 
   return (
     <>

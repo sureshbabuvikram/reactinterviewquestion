@@ -17,14 +17,14 @@ function App() {
   return (
   <>
   <textContextValue.Provider value={[value,setValue]}>
-     {/* <Todo /> */}
-  {/* <Hooks /> */}
-  {/* <Apicalls /> */}
-    {/* <Redux /> */}
-    {/* <Display /> */}
-    {/* <TodolistUseref /> */}
-    {/* <Generaljs /> */}
-    {/* <Examplehooks /> */}
+     <Todo />
+  <Hooks />
+  <Apicalls />
+    <Redux />
+    <Display />
+    <TodolistUseref />
+    <Generaljs />
+    <Examplehooks />
     <Apiexample />
   </textContextValue.Provider>
  
