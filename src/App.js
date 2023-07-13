@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext,  useState } from "react";
+import Apicalls from "./Apicalls";
+import Display from "./Displayreduxstorevalue";
+import Hooks from "./hooks";
+import Redux from "./Redux";
+import Todo from "./todo";
+import TodolistUseref from "./TodolistUseref";
+import Generaljs from "./Generaljs";
+import Examplehooks from "./Examplehooks";
+import Apiexample from "./Apiexample";
+
+//useContext hook
+export const textContextValue=createContext()
 
 function App() {
+  const[value,setValue]=useState(10)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+  <textContextValue.Provider value={[value,setValue]}>
+     {/* <Todo /> */}
+  {/* <Hooks /> */}
+  {/* <Apicalls /> */}
+    {/* <Redux /> */}
+    {/* <Display /> */}
+    {/* <TodolistUseref /> */}
+    {/* <Generaljs /> */}
+    {/* <Examplehooks /> */}
+    <Apiexample />
+  </textContextValue.Provider>
+ 
+  </> 
+  
   );
 }
 
